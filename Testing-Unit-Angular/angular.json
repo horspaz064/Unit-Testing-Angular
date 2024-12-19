@@ -1,0 +1,56 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "projects": {
+    "scripts": {
+      "projectType": "application",
+      "root": "scripts",
+      "sourceRoot": "scripts",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/scripts",
+            "index": "scripts/src/index.html",
+            "main": "scripts/src/main.ts",
+            "polyfills": "scripts/src/polyfills.ts",
+            "tsConfig": "tsconfig.app.json",
+            "assets": [
+              "scripts/src/favicon.ico",
+              "scripts/src/assets"
+            ],
+            "styles": [
+              "scripts/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "buildTarget": "scripts:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": "scripts/src/polyfills.ts",
+            "tsConfig": "tsconfig.spec.json",
+            "karmaConfig": "karma.conf.js",
+            "assets": [
+              "scripts/src/favicon.ico",
+              "scripts/src/assets"
+            ],
+            "styles": [
+              "scripts/src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": false
+  }
+} 

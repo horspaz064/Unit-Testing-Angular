@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "paths": {
+      "@angular/*" :  ["node_module/@angular/*"]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es2015",
+    "lib": [ "es2018", "dom" ]
+  },
+  "angularCompilerOptions": {
+    "enableIvy": true
+  },
+  "files": [
+    "scripts/src/main.ts",
+    "scripts/src/polyfills.ts"
+  ],
+  "include": [
+    "src/**/*.d.ts"
+  ]
+}
