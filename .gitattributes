@@ -2,3 +2,4 @@ Testing-Unit-Angular.sln filter=lfs diff=lfs merge=lfs -text
 Testing-Unit-Angular/*.png filter=lfs diff=lfs merge=lfs -text
 Testing-Unit-Angular/*.jpg filter=lfs diff=lfs merge=lfs -text
 Testing-Unit-Angular/.angular/cache/**/* filter=lfs diff=lfs merge=lfs -text
+*.pack filter=lfs diff=lfs merge=lfs -text
