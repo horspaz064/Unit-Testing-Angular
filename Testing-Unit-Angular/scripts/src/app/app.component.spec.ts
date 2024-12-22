@@ -1,20 +1,13 @@
 import { AppComponent } from "./app.component";
 
 describe("AppComponent", () => {
-    it("Testing contain", () => {
-        const element = new AppComponent();
-
-        expect(element.title).toContain('Hello')
+    const component = new AppComponent()
+    
+    it("testing add function", () => {
+        expect(component.add(5, 5)).toBe(10)
     })
 
-    it("check contain this array", () => {
-        const cars = ["lambo", "BWN", "Bugatti"];
-        expect(cars).toContain("BWN")
-    })
-
-    it("Login must be true", () => {
-        let num1 = 20;
-        let num2 = 30
-        expect(num1 < num2).toBeTruthy()
+    it("testing multiply function", () => {
+        expect(component.multiply(1, 2)).toBe(2)
     })
 })
